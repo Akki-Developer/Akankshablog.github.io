@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Akanksha's Blog</title>
+<!--   <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .social-icons {
+      display: flex;
+      list-style: none
+    }
+
+    .social-icons li a {
+      padding: 20px;
+      color: #fff;
+      font-size: 25px;
+      cursor: pointer;
+      color: #FFFAFA;
+      margin-right: 16px;
+      position: relative;
+      text-align: center;
+      line-height: 70px;
+      width: 80px;
+      height: 80px
+    }
+
+    .social-icons li a::before,
+    .social-icons li a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      transition: .5s linear
+    }
+
+    .social-icons li a:hover i {
+      transform: scale(1.1)
+    }
+
+    .social-icons li a:hover::before {
+      transform: skewX(20deg);
+      border-left: 3px solid;
+      border-right: 3px solid;
+      border-radius: 50%
+    }
+
+    .social-icons li a:hover::after {
+      transform: skewY(-25deg);
+      border-top: 3px solid;
+      border-bottom: 3px solid;
+      border-radius: 50%
+    }
+
+    @media (max-width:700px) {
+      ul.social-icons {
+        display: block
+      }
+    }
+  </style> -->
+</head>
+<body>
+  <section>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Akanksha-Developer</a>
+
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            My Projects
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Blog</a>
+            <a class="dropdown-item" href="#">Lamberjack</a>
+            <a class="dropdown-item" href="#">Invisible Clock</a>
+            <a class="dropdown-item" href="#">GitHub Customize</a>
+          </div>
+        </li>
+      </ul>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" action="/action_page.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </nav>
+    </nav>
+  </section>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <style type="text/css">
+
+    .btn-full:hover{
+      background-color:  #bf55ec!important;
+      color: white!important;
+      border:1px solid  #bf55ec!important;
+    } 
+
+    .btn-nav:hover{
+      background-color:  white!important;
+      color: #bf55ec!important;
+      border:1px solid  #bf55ec!important;
+    }
+
+    @media only screen and (max-width: 998px){
+      .mainh1{font-size: 200%;}
+    }
+
+    @media only screen and (max-width: 768px){
+      .mainh1{font-size: 1.7em!important;
+       text-align: center;}
+
+       .mainh2{
+        font-size: 1.7em!important;
+        padding: 0 50px!important;
+        text-align: center;
+      } 
+
+    }
+
+    @media only screen and (max-width: 480px){
+      .btn{
+        text-align: center!important;
+        margin-bottom: 20px!important;
+      }
+
+      .mainh1{font-size: 1.7em!important;
+       text-align: center;}
+
+       .mainh2{
+        font-size: 1.3em!important;
+        padding: 0 110px!important;
+        text-align: center;
+      }
+
+      header{ height: 400px!important;
+        margin-bottom: 30px; } 
+
+
+
+      }
+
+    </style>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .social-icons {
+
+        display: flex;
+        
+        list-style: none
+      }
+
+      .social-icons a {
+        padding: 15px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        color: #FFFAFA;
+        margin-right: 0px;
+        position: relative;
+        text-align: center;
+        line-height: 40px;
+        width: 60px;
+        height: 60px
+      }
+
+      .social-icons a::before,
+      .social-icons a::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        transition: .5s linear
+      }
+
+      .social-icons a:hover i {
+        transform: scale(1.1)
+      }
+
+      .social-icons a:hover::before {
+        transform: skewX(20deg);
+        border-left: 3px solid;
+        border-right: 3px solid;
+        border-radius: 50%
+      }
+
+      .social-icons a:hover::after {
+        transform: skewY(-25deg);
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        border-radius: 50%
+      }
+
+      @media (max-width:700px) {
+        .social-icons {
+          display: block
+        }
+      }
+    </style>
+    <header style="background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('file:///G:/Blog/images/profile.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    position: relative;
+    height: 500px;
+    width: auto;">  
+
+    <div style="width: 680px;
+    padding:0 2%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Flamenco;">
+
+    <h2 class="animated infinite pulse delay-3s mainh1" style="color: #fff;
+    font-size: 280%;  
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    margin-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;"> 
+
+    Welcome To My Blog 
+  </h2>
+
+  <h2 class="mainh2" style="color: #fff;
+  font-size: 180%;  
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: lighter;">
+  I'm Akanksha Gupta
+</h2>
+<h2 class="mainh2" style="color: #fff;
+font-size: 100%;  
+word-spacing: 5px;
+letter-spacing: 3px;
+line-height: 1.6;
+margin-bottom: 10px;
+margin-top: 10px;
+text-align: center;
+text-transform: uppercase;
+font-weight: lighter;">
+I'm Software Developer
+</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 center-col text-center"> 
+      <div class="heading d-flex justify-content-center align-items-center">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/akankaha.gupta"  target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/Akanksh61006100/"  target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://github.com/Akki-Developer"  target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/Akanksh61006100"  target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/akanksha-gupta-1bb681188/"  target="_blan k"><i class="fa fa-linkedin"></i></a>
+          <a href="https://stackoverflow.com/users/13518917"  target="_blank"><i class="fa fa-stack-overflow"></i></a>
+          <a href="#"  target="_blank"><i class="fa fa-google"></i></a>
+      </div>
+      </div>
+<!-- <div style="display: flex; justify-content: center; text-align: center;">
+
+  <a href="#" class="btn btn-nav " style="display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+  
+  color: #fff;
+  border: 1px solid #fff;"> 
+MY BLOGs</a>
+</div>
+
+-->
+</div>
+</div>
+</div>
+</header>
+
+
+
+<section>
+  <div class="container-fluid">
+    <h1 class="text-center text-capitalize">About me</h1>
+    <hr class="w-25 mx-auto">
+    <h2 class="text-center text-capitalize">Let Me Introduce My Self</h2>
+    <hr>
+  </div>
+  <div class="row mb-5 ml-lg-7 mr-sm-2">
+    <div class="col-md-12">
+      <p>
+        <img style="float: right;" src="images/pic.jpeg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></p>
+        <p style="padding: 0px 0px 0px 40px ">
+        Focused and quick-learning Software Developer with 6 months of experience in coding, reviewing program functionality, establishing system improvements . Equally adept at developing software and cloud integrations.</p>
+        <p style="padding: 0px 0px 0px 40px ">
+          Python/Django developer seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid">
+      <h1 class="text-center text-capitalize">Get In Touch</h1>
+      <hr class="w-25 mx-auto">
+      <h6 class="text-center text-capitalize">Feel Free To Contact Me</h6>
+      <hr>
+    </div>
+    <div class="row mb-5 ml-lg-7 mr-sm-2">
+      <div class="col-md-6">
+        <p style="padding: 0px 0px 0px 40px ">
+          Hello Everyone,I am here to help you.if you want to know something or any suggestions please ping me guys.Thank You ! Have a nice day
+
+        </p>
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- <h1 style="text-align: center; color: green; text-transform: capitalize; font-weight: bold;">Welcome To My Blog :)</h1> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <h3 ><center>Follow Me For More Details</center></h3>
+  </nav>
+</body>
+</html>
